@@ -1,0 +1,78 @@
+{
+  "verified_at_utc": "2026-11-04T08:31:52.955718+00:00",
+  "plan_sha256": "01a189ae5822b62271e98a2b85b413630388f11ede7bb7011fd607f7d7c1a33e",
+  "received_archive_sha256": "bd0abdfec8b190c54d99c22d8e4d6d0120a6e678fbd4c03b97b140173aeefe2f",
+  "received_archive_bytes_checked": true,
+  "all_checks_passed": true,
+  "cases_recomputed": 30,
+  "summaries_recomputed": 6,
+  "paired_differences_recomputed": 15,
+  "seed42_baselines_equal": [
+    "GROUP_1/FULL",
+    "GROUP_1/NO_DOMAIN",
+    "GROUP_2/FULL",
+    "GROUP_2/NO_DOMAIN",
+    "GROUP_3/FULL",
+    "GROUP_3/NO_DOMAIN"
+  ],
+  "source_and_dataset_and_split_bindings": true,
+  "vm_environment_matches_previous_receipt": true,
+  "label_probability_consistency": true,
+  "f1_difference_signs_by_protocol": {
+    "GROUP_1": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "GROUP_2": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "GROUP_3": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "prediction_file_sha256": {
+    "RF_GROUP_1_FULL_seed_42.npz": "27bc5daab7c0caf1d7dc60ff76dc3e7e1e58d56c827a93989e271b6d3c12da30",
+    "RF_GROUP_1_NO_DOMAIN_seed_42.npz": "4bea5b920eff5940ea214f39b315e64ddca91a87511d77a8b7a540353782a530",
+    "RF_GROUP_2_FULL_seed_42.npz": "5009f4cbe6fdad4961dc7861b0e0b3732c73d53a13f6c055af38501e9f2ea8a2",
+    "RF_GROUP_2_NO_DOMAIN_seed_42.npz": "9f1ece1f74f651accdb925926533b1c84985f3ecb068b6b3e90e01b3374c9244",
+    "RF_GROUP_3_FULL_seed_42.npz": "5fba7f60ab5f848c3561958ab364e497283627595a7f56f633c46f3dd64963d2",
+    "RF_GROUP_3_NO_DOMAIN_seed_42.npz": "53e4905f166a112692d4148e91ddecdc6bcbbac7b67b7b57cd847160fcbc7a1a",
+    "RF_GROUP_1_FULL_seed_0.npz": "a21daa42405808f9e7bdbc89670537959dc7e23f730a68167cd25410b3973a25",
+    "RF_GROUP_1_NO_DOMAIN_seed_0.npz": "81aa52de10672626a3ac2d662762ad8df17efff41113300d07cda31fd9462d56",
+    "RF_GROUP_2_FULL_seed_0.npz": "26a71f4064ff48b8af97f86a989aaa17891187214adf0594dbbee622b5bbadba",
+    "RF_GROUP_2_NO_DOMAIN_seed_0.npz": "aa4ebe65781559405bc6a2903605892c74f0eadf493c6877898ab63d998f1e3e",
+    "RF_GROUP_3_FULL_seed_0.npz": "2293fb2614ec0e0a1ebd053cbf83dae348a00f4eeb33a5e49b341854ac0e05aa",
+    "RF_GROUP_3_NO_DOMAIN_seed_0.npz": "b420e51e742a9512e465c9e04334ed9442be461c6458b0dae3a3925e59c26d27",
+    "RF_GROUP_1_FULL_seed_1.npz": "78afd3e108b6592f27dee71dc216d5ca20922d18e424185a738d7f7c8f20964a",
+    "RF_GROUP_1_NO_DOMAIN_seed_1.npz": "0e75f8aa1310086bbcd344cba4b185cbb972a7d17e702d44b3cc192bc226204d",
+    "RF_GROUP_2_FULL_seed_1.npz": "a4a229965f8f9fcc28d116e57f7a329433f814ec371d0a4ee2b31c43a4abc24e",
+    "RF_GROUP_2_NO_DOMAIN_seed_1.npz": "fb870174b458376b772df6ff9aaceafa43b1e7ff539c4aadb37b7eb7a07e3193",
+    "RF_GROUP_3_FULL_seed_1.npz": "21549c518da1b87dbc0e731c9562b24a3863f995fb4a01b92bee3162f2cc2cf7",
+    "RF_GROUP_3_NO_DOMAIN_seed_1.npz": "37e40ce91cdcd31bef2a88faed0ef7ee3100d3f842aca5a6c00162d2ba9316e4",
+    "RF_GROUP_1_FULL_seed_7.npz": "dc622c4875202ed3dca418749d83f211d2ec709379545b274a54b32821f92ba2",
+    "RF_GROUP_1_NO_DOMAIN_seed_7.npz": "6f727b9f5ff53c13809975e0106bc331027c25ed81f653275c0587fe38814694",
+    "RF_GROUP_2_FULL_seed_7.npz": "4500d362f659fd9dfeab46318f042abdcad82bd2578d8f4e862fdee5f8679c6a",
+    "RF_GROUP_2_NO_DOMAIN_seed_7.npz": "22bd02428c75f68ae9a011ee861cb7b88288f513ec2533581dd978e7b073dfad",
+    "RF_GROUP_3_FULL_seed_7.npz": "45829021fd4c054ebe3bc39cbd770f410330b6d6d85de99bbbda921537b22c23",
+    "RF_GROUP_3_NO_DOMAIN_seed_7.npz": "01ab04ef69f98ad972e9a4e809dc9b268a24a9341838e87f181ec84bcdd22e08",
+    "RF_GROUP_1_FULL_seed_2026.npz": "bc70d858831e8ead64c737401b869659e0801be87e969e458c34c18c114090f1",
+    "RF_GROUP_1_NO_DOMAIN_seed_2026.npz": "5de37898bc16d78e525cf677f3c9eda0377e975098d86a2803deb1a6537dcda4",
+    "RF_GROUP_2_FULL_seed_2026.npz": "242502ecc3dda39c9724e65eb400f3f0cf8d924c6403c91eab9b440a95cacebb",
+    "RF_GROUP_2_NO_DOMAIN_seed_2026.npz": "d275ea6fc7e8a4dd9fafd0a97ffb6431262f2a28d1b56be000b7ed78365797f1",
+    "RF_GROUP_3_FULL_seed_2026.npz": "cd7781334fc37f0cb4beaa0a9c9ba74f93e1432ab554c5ff2d8d5cd18fd3fdca",
+    "RF_GROUP_3_NO_DOMAIN_seed_2026.npz": "1c90f5b74f9e81bdd95c063f63e8fc6e32b74e6dce6d2a587a65e8cfb02e309e"
+  },
+  "verifier_sha256": "0cfd98bcaefc09c99d6df2b366293b9af61410db61a141f09ffadb4b96c44798",
+  "scope": "Saved-evidence verification without refitting. Seeds measure stochastic-estimator sensitivity on fixed rows; they are not independent traffic samples or confidence intervals."
+}

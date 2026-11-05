@@ -1,0 +1,7 @@
+split,label,rows,with_dot,prefix45_with_dot,longer_than45
+train,0,944106,0,0,0
+train,1,1532263,0,0,0
+train,2,6441,0,0,1728
+test,0,236072,236027,236027,0
+test,1,383072,383071,383071,0
+test,2,1559,1559,1257,906

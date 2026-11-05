@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "core_model_cases_verified": 50,
+  "lab_sensitivity_cases": 24,
+  "ctu_original_download_md5_verified": true,
+  "ctu_six_lexical_scores_reproduced": true,
+  "csv_mutation_rejected": true,
+  "split_regeneration_blocked": true,
+  "overlapping_indices_rejected": true,
+  "pdf_pages": 6,
+  "pdf_visual_review": "all six pages rendered; affected pages inspected at full size; no overflow or missing glyphs",
+  "remaining": [
+    "Exact two-stage CIC hybrid reproduction",
+    "External source-IP audit with labeled benign/attack PCAPs",
+    "Actual public repository URL"
+  ],
+  "vm_python": "3.12.16",
+  "vm_packages_pinned": 18,
+  "post_transfer_model_cases_verified": 50,
+  "prediction_arrays_match_reference": true,
+  "integrity_guard_test_origin": "reference execution; unchanged source",
+  "received_evidence_archive": "evidence/IAM302t_KetQua_VM.zip"
+}

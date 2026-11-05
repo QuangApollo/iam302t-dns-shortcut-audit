@@ -1,0 +1,6 @@
+protocol,test_n,test_rows_matching_train_nonlabel_vector,percent
+ROW,68413,26807,39.18407320246152
+GROUP_1,76014,0,0.0
+GROUP_2,76014,0,0.0
+GROUP_3,76014,0,0.0
+EXACT_VECTOR_GROUP,65802,0,0.0

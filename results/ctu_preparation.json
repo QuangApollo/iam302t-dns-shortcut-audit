@@ -1,0 +1,28 @@
+{
+  "train": {
+    "source_url": "https://zenodo.org/records/6508640/files/train_combined_multiclass.csv.gz?download=1",
+    "publisher_md5": "c30a49c6f362e0c2dffe3881504a6825",
+    "source_sha256": "9bc7c1e53d67c2b5ad9352a45bc415107521da10e96572d0ed5e4586b80e4de9",
+    "binary_sha256": "ccddc988e89af2ff440039d666b9626e78a5d193fc8e52f75c05ef6cf6ccb59d",
+    "original_label_counts": {
+      "0": 944106,
+      "1": 1532263,
+      "2": 6441
+    },
+    "binary_rows": 950547,
+    "transformation": "Keep class 0 and 2. Copy domain field unchanged."
+  },
+  "test": {
+    "source_url": "https://zenodo.org/records/6508640/files/test_combined_multiclass.csv.gz?download=1",
+    "publisher_md5": "ce52df239c4245ffaa15c642b8b0b625",
+    "source_sha256": "028fd97a4c498e8b6f22b93c2f804e4e0f3afe0c15ff5b3e71f9a12d0ddd4783",
+    "binary_sha256": "b799ff0c89a9f8cc79fb0991518c5dbfb607805426f7eaa420c932b351d90362",
+    "original_label_counts": {
+      "0": 236072,
+      "1": 383072,
+      "2": 1559
+    },
+    "binary_rows": 237631,
+    "transformation": "Keep class 0 and 2. Copy domain field unchanged."
+  }
+}

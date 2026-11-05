@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "script": "source/paper_rf_seed_check.py",
+  "script_sha256": "931469ef57e4276eedee85311bc4541275db470b3f4de080bb931d79a03ca551",
+  "checks": {
+    "compilation": true,
+    "seed_42_GROUP_2_FULL_labels_match_baseline": true,
+    "validated_cached_resume": true,
+    "fixed_full_plan_saved_without_fit": true
+  },
+  "smoke_status": {
+    "mode": "smoke",
+    "plan_sha256": "4a8ebd9ec645710c7e53482198b7259d33ef45f6f54b50e1ba1777a167da2b8e",
+    "expected_cases": 1,
+    "completed_cases": 1,
+    "full_experiment_complete": false,
+    "finished_at_utc": "2026-11-04T07:12:48.987949+00:00"
+  },
+  "full_experiment_complete": true,
+  "full_plan_expected_cases": 30,
+  "scope": "Initial script smoke/cache checks followed by independently verified full 30-case VM experiment.",
+  "initial_smoke_full_experiment_complete": false,
+  "full_vm_verification": "results/paper_rf_seeds/verification.json"
+}

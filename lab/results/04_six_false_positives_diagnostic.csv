@@ -1,0 +1,7 @@
+session_id,window_index,client_ip,analysis_domain,query_count,pilot_label,predicted,score,variant,point_mean_qname_length,point_mean_qname_entropy,point_mean_subdomain_entropy,point_mean_interarrival_s,point_cv_interarrival,point_servfail_ratio,graph_unique_qnames,point_missing_count
+S08,0,192.168.10.10,ubuntu.com,1,0,1,0.9731238958557398,POINT_NO_TYPE,29.0,3.6899,3.281,,,0.0,1,2
+S08,1,192.168.10.10,ubuntu.com,1,0,1,0.9731238958557398,POINT_NO_TYPE,29.0,3.6899,3.281,,,0.0,1,2
+S08,6,192.168.10.10,fwupd.org,2,0,1,0.8749409835140561,POINT_NO_TYPE,13.0,3.3927,1.585,0.0,,0.0,1,1
+S08,6,192.168.10.10,ubuntu.com,1,0,1,0.9731238958557398,POINT_NO_TYPE,29.0,3.6899,3.281,,,0.0,1,2
+S08,7,192.168.10.10,ubuntu.com,1,0,1,0.9731238958557398,POINT_NO_TYPE,29.0,3.6899,3.281,,,0.0,1,2
+S08,9,192.168.10.10,ubuntu.com,1,0,1,0.9731238958557398,POINT_NO_TYPE,29.0,3.6899,3.281,,,0.0,1,2

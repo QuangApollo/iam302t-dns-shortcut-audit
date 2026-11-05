@@ -1,0 +1,20 @@
+{
+  "python": "3.12.16",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scikit-learn": "1.8.0",
+  "matplotlib": "3.10.8",
+  "scipy": "1.17.0",
+  "joblib": "1.5.3",
+  "threadpoolctl": "3.6.0",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "seed": 42,
+  "ctu_preparation_sha256": "ee632f35204d19128429e1ff92100f47a51c4104e3f5669e01639fbaea003ebf",
+  "selected_length_threshold_train_only": 30,
+  "train_unique_strings": 874776,
+  "test_unique_strings": 237624,
+  "suffix_train_selected": 1,
+  "family_train_selected": 4,
+  "normalization": "trim, lowercase, remove trailing dot; first-label sensitivity transforms test only",
+  "scope": "LR baselines, not a reproduction of CTU MC-CNN or a proof of complete DNS-transaction leakage."
+}

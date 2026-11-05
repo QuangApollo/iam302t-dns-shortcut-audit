@@ -1,0 +1,5 @@
+split,label,rows,zero_dots,one_dot,two_plus_dots,median_length,p90_length
+TRAIN,0,944106,944106,0,0,10.0,16.0
+TRAIN,1,6441,6441,0,0,34.0,62.0
+TEST,0,236072,47,208314,27711,14.0,21.0
+TEST,1,1559,0,0,1559,57.0,176.0

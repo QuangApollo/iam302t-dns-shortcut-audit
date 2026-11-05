@@ -1,0 +1,12 @@
+{
+  "n_rows": 228042,
+  "benign": 156014,
+  "attack": 72028,
+  "duplicate_full_rows_beyond_first": 86866,
+  "duplicate_full_rows_percent": 38.09210584015225,
+  "distinct_nonlabel_vectors": 140176,
+  "conflicting_nonlabel_vector_groups": 1000,
+  "rows_in_conflicting_vectors": 87524,
+  "empirical_min_errors_deterministic_all41": 17541,
+  "interpretation": "Feature-equivalent records with different labels are not by themselves proof of mislabeling. The empirical all-row error floor is not a bound for a separately sampled test set."
+}

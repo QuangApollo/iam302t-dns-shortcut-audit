@@ -1,0 +1,5 @@
+model,treatment,attack_probability,predicted
+RF,observed,0.34452888004053783,0
+RF,name_family_train_attack_medians,0.8056277900112703,1
+LR,observed,0.7962223128139552,1
+LR,name_family_train_attack_medians,0.9170306046726057,1

@@ -1,0 +1,69 @@
+{
+  "repository": "https://github.com/harpomaxx/deepseq",
+  "commit": "769e3466f90173b663aa1fe3008e7a70295fbdfd",
+  "inspected_at": "2026-11-03",
+  "files": [
+    {
+      "file": "preprocess.R",
+      "url": "https://raw.githubusercontent.com/harpomaxx/deepseq/769e3466f90173b663aa1fe3008e7a70295fbdfd/preprocess.R",
+      "sha256": "32984c9db1307b056ffb9a702e24f8fae081538c24f2b3cfdc05e6b937e3273a",
+      "line_locations": {
+        "tokenize <-": [
+          53
+        ],
+        "padded_token<-": [
+          62
+        ],
+        "build_dataset<-": [
+          78
+        ],
+        "build_train_test<-": [
+          91
+        ],
+        "test_dataset_keras<-build_dataset": [
+          103
+        ]
+      }
+    },
+    {
+      "file": "deepseq_classifier.R",
+      "url": "https://raw.githubusercontent.com/harpomaxx/deepseq/769e3466f90173b663aa1fe3008e7a70295fbdfd/deepseq_classifier.R",
+      "sha256": "0777c9407156191ec80c4590de6f6e7f889ff56b73f87efc688236d4a5410bcc",
+      "line_locations": {
+        "make_option(\"--maxlen\"": [
+          18
+        ],
+        "testset<-read_valid_csv": [
+          57
+        ],
+        "test_dataset_keras<-build_dataset": [
+          60
+        ]
+      }
+    },
+    {
+      "file": "config.R",
+      "url": "https://raw.githubusercontent.com/harpomaxx/deepseq/769e3466f90173b663aa1fe3008e7a70295fbdfd/config.R",
+      "sha256": "437d5ae7c2565503ee08879532d4717a3cc9db665940b8ef37da223d8c605361",
+      "line_locations": {}
+    },
+    {
+      "file": "model_mc_cnn_asai.R",
+      "url": "https://raw.githubusercontent.com/harpomaxx/deepseq/769e3466f90173b663aa1fe3008e7a70295fbdfd/model_mc_cnn_asai.R",
+      "sha256": "35d3cd20444fa3a8ee987093027a946852f49dfe8fea024b0b75e63d24625e3e",
+      "line_locations": {}
+    }
+  ],
+  "verified_behavior": [
+    "Character tokenization followed by end padding/end truncation",
+    "Command-line maximum-length default 45",
+    "External test file uses the same build_dataset function"
+  ],
+  "no_suffix_removal_in_inspected_preprocessing": true,
+  "scope": "Source inspection and first-45-character exposure check. Not execution of the R pipeline, verification of the exact historical vocabulary/configuration, or reproduction of a neural checkpoint.",
+  "publication_trace": {
+    "2019": "Table 3 per-class test supports match the released test files; narrative 70/30 differs from released approximately 80/20 counts. Matching supports alone do not identify the entire run.",
+    "2020": "The follow-up explicitly describes a new five-tool dataset; the three-tool release finding is not automatically attributed to that dataset."
+  },
+  "source_sha256": "2173d848ec3c983b14bb39f6238c640d7de0b113740ffa276edad86a5dbc4c34"
+}

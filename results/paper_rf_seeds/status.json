@@ -1,0 +1,8 @@
+{
+  "mode": "full",
+  "plan_sha256": "01a189ae5822b62271e98a2b85b413630388f11ede7bb7011fd607f7d7c1a33e",
+  "expected_cases": 30,
+  "completed_cases": 30,
+  "full_experiment_complete": true,
+  "finished_at_utc": "2026-11-04T07:35:21.023430+00:00"
+}

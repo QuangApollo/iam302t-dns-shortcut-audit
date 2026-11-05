@@ -1,0 +1,3 @@
+rule,threshold_chosen_on,TN,FP,FN,TP,accuracy
+UNIQUE_QNAMES_GT_10,S08_POST_HOC,77,0,0,13,1.0
+QNAME_ENTROPY_GT_3,S08_POST_HOC,77,0,0,13,1.0

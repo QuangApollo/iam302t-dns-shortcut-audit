@@ -1,0 +1,31 @@
+{
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "seed": 42,
+    "dataset_sha256": "62ec5d632c9e665851c551487d6d1e2afbc7f8f55b62cac4649999dadafc89de"
+  },
+  "original_md5_verified": true,
+  "original_sha256_verified": true,
+  "core_lr8_metrics_reproduced": true,
+  "lr8_dot_coefficient": 0.0,
+  "prediction_differences_after_dropping_dots": {
+    "FULL_STRING": 0,
+    "FIRST_LABEL": 0
+  },
+  "train_length_equals_max_and_mean_label_length": 950547,
+  "train_rows": 950547,
+  "test_rows_violating_training_length_identity": 237584,
+  "test_rows": 237631,
+  "test_attack": 1559,
+  "prefix45_scope": "Exposure check under post-truncation to 45 characters, as in the associated deepseq default. Not a replay of the authors exact trained checkpoint.",
+  "first_label_scope": "Lossy test-input sensitivity; not a reconstruction of original registrable domains or a validated repair.",
+  "source_sha256": "bdac0eccd75c5060e7c00608cf5cffe225204f6eef31315c6b6350a7f8bfc7f2"
+}

@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "PASS LR: all 25 core prediction arrays and metrics",
+    "PASS RF: all 25 core prediction arrays and metrics",
+    "PASS eight mechanism refits match original VM predictions exactly",
+    "PASS all eight cohort summaries recomputed from saved per-row scores",
+    "PASS grouping-only sld negative control and additive RF path score",
+    "PASS four CTU confusion matrices and unchanged predictions after deleting DOTS",
+    "PASS dataset/split bindings, coarse-token disjointness, and CTU binary hashes"
+  ],
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "seed": 42,
+    "dataset_sha256": "62ec5d632c9e665851c551487d6d1e2afbc7f8f55b62cac4649999dadafc89de"
+  },
+  "scope": "Saved numerical evidence verification without model refitting; original VM receipt/logs are retained unchanged.",
+  "source_sha256": "4be72ff6b9eaffe21285d03de3c5fe034414825979736b94b7ede508cb737444"
+}

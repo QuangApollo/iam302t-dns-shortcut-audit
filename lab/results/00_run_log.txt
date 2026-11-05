@@ -1,0 +1,52 @@
+PASS: 4 original model confusion matrices / F1 reproduced
+Missing-value sensitivity:
+         model                 strategy  n_test  FP  FN       f1      fpr
+     CTRL_NULL            ORIGINAL_ZERO      90   0   0 1.000000 0.000000
+ POINT_NO_TYPE            ORIGINAL_ZERO      90   6   0 0.812500 0.077922
+ GRAPH_NO_TYPE            ORIGINAL_ZERO      90   0   0 1.000000 0.000000
+HYBRID_NO_TYPE            ORIGINAL_ZERO      90   6   0 0.812500 0.077922
+     CTRL_NULL        ZERO_MISSING_FLAG      90   0   0 1.000000 0.000000
+ POINT_NO_TYPE        ZERO_MISSING_FLAG      90   6   0 0.812500 0.077922
+ GRAPH_NO_TYPE        ZERO_MISSING_FLAG      90   0   0 1.000000 0.000000
+HYBRID_NO_TYPE        ZERO_MISSING_FLAG      90   6   0 0.812500 0.077922
+     CTRL_NULL             TRAIN_MEDIAN      90   0   0 1.000000 0.000000
+ POINT_NO_TYPE             TRAIN_MEDIAN      90   6   0 0.812500 0.077922
+ GRAPH_NO_TYPE             TRAIN_MEDIAN      90   0   0 1.000000 0.000000
+HYBRID_NO_TYPE             TRAIN_MEDIAN      90   4   0 0.866667 0.051948
+     CTRL_NULL        TRAIN_MEDIAN_FLAG      90   0   0 1.000000 0.000000
+ POINT_NO_TYPE        TRAIN_MEDIAN_FLAG      90   6   0 0.812500 0.077922
+ GRAPH_NO_TYPE        TRAIN_MEDIAN_FLAG      90   0   0 1.000000 0.000000
+HYBRID_NO_TYPE        TRAIN_MEDIAN_FLAG      90   4   0 0.866667 0.051948
+     CTRL_NULL     ORIGINAL_ZERO_N_GE_2      85   0   0 1.000000 0.000000
+ POINT_NO_TYPE     ORIGINAL_ZERO_N_GE_2      85   1   0 0.962963 0.013889
+ GRAPH_NO_TYPE     ORIGINAL_ZERO_N_GE_2      85   0   0 1.000000 0.000000
+HYBRID_NO_TYPE     ORIGINAL_ZERO_N_GE_2      85   1   0 0.962963 0.013889
+     CTRL_NULL TRAIN_MEDIAN_FLAG_N_GE_2      85   0   0 1.000000 0.000000
+ POINT_NO_TYPE TRAIN_MEDIAN_FLAG_N_GE_2      85   1   0 0.962963 0.013889
+ GRAPH_NO_TYPE TRAIN_MEDIAN_FLAG_N_GE_2      85   0   0 1.000000 0.000000
+HYBRID_NO_TYPE TRAIN_MEDIAN_FLAG_N_GE_2      85   0   0 1.000000 0.000000
+Ablation:
+                               variant  FP  FN     f1      fpr
+                            GRAPH_FULL   0   0 1.0000 0.000000
+                 GRAPH_MINUS_3_PROXIES   0   0 1.0000 0.000000
+               GRAPH_MINUS_QNAME_COUNT   0   0 1.0000 0.000000
+ GRAPH_MINUS_3_PROXIES_AND_QNAME_COUNT   0   0 1.0000 0.000000
+               GRAPH_MINIMAL_DIVERSITY   0   0 1.0000 0.000000
+                            POINT_FULL   6   0 0.8125 0.077922
+                  POINT_MINUS_SERVFAIL   6   0 0.8125 0.077922
+                           HYBRID_FULL   6   0 0.8125 0.077922
+                HYBRID_MINUS_3_PROXIES   6   0 0.8125 0.077922
+HYBRID_MINUS_3_PROXIES_AND_QNAME_COUNT   6   0 0.8125 0.077922
+DNS response by class:
+ label  queries  matched  NOERROR  SERVFAIL  latency_gt_10000ms  unmatched_queries
+     0     1393     1393     1279       114                  96                  0
+     1     2149     2148     2148         0                   0                  1
+Six FP diagnostics:
+ window_index analysis_domain  query_count  point_missing_count  point_mean_interarrival_s  point_cv_interarrival
+            0      ubuntu.com            1                    2                        NaN                    NaN
+            1      ubuntu.com            1                    2                        NaN                    NaN
+            6       fwupd.org            2                    1                        0.0                    NaN
+            6      ubuntu.com            1                    2                        NaN                    NaN
+            7      ubuntu.com            1                    2                        NaN                    NaN
+            9      ubuntu.com            1                    2                        NaN                    NaN
+All outputs: /mnt/data/IAM302t_Day1_S08_Audit/results

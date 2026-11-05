@@ -1,0 +1,20 @@
+{
+  "vm_python": "3.12.16",
+  "verified_core_cases": 50,
+  "source_matches_reference": true,
+  "prediction_arrays_match_reference": true,
+  "csv_max_metric_difference_from_reference": 0.0,
+  "all_group_sld_disjoint": true,
+  "checks": [
+    "PASS LR: 25 VM confusion matrices, labels and frozen test indices independently checked",
+    "PASS RF: 25 VM confusion matrices, labels and frozen test indices independently checked",
+    "PASS matching measured values: ctu_results.csv",
+    "PASS matching measured values: qtype_proxy_results.csv",
+    "PASS matching measured values: reference_inventory_results.csv",
+    "PASS matching measured values: model_summary.csv",
+    "PASS LAB baseline, 24 missingness cases, graph ablation and response-class counts",
+    "PASS VM execution logs have no Python traceback"
+  ],
+  "received_evidence_sha256": "e776b3e204efd49a38a6e39eddc0ddf471b892c42a1bb91942f913a690c564c1",
+  "frozen_split_sha256": "a48ccdaf3995390f3af063cb107429738149ee546dda24d14804c30a3d2641d5"
+}

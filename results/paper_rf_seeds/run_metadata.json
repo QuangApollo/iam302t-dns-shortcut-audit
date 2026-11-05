@@ -1,0 +1,18 @@
+{
+  "plan_sha256": "01a189ae5822b62271e98a2b85b413630388f11ede7bb7011fd607f7d7c1a33e",
+  "started_at_utc": "2026-11-04T07:34:18.534361+00:00",
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "seed": 42,
+    "dataset_sha256": "62ec5d632c9e665851c551487d6d1e2afbc7f8f55b62cac4649999dadafc89de"
+  },
+  "scope": "RF stochastic-model stability on fixed test rows, not independent deployment validation."
+}

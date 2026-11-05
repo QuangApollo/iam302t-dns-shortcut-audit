@@ -1,0 +1,51 @@
+{
+  "protocol": "GROUP_2 frozen indices",
+  "baseline_predictions_match_vm": true,
+  "replacement_features": [
+    "FQDN_count",
+    "subdomain_length",
+    "upper",
+    "lower",
+    "numeric",
+    "entropy",
+    "special",
+    "labels",
+    "labels_max",
+    "labels_average",
+    "len",
+    "subdomain",
+    "rr_name_entropy",
+    "rr_name_length"
+  ],
+  "replacement_values": {
+    "FQDN_count": 27.0,
+    "subdomain_length": 10.0,
+    "upper": 0.0,
+    "lower": 10.0,
+    "numeric": 11.0,
+    "entropy": 2.674525737762451,
+    "special": 6.0,
+    "labels": 6.0,
+    "labels_max": 7.0,
+    "labels_average": 3.6666667461395264,
+    "len": 14.0,
+    "subdomain": 1.0,
+    "rr_name_entropy": 3.1858086585998535,
+    "rr_name_length": 26.0
+  },
+  "scope": "Post-hoc score sensitivity under a fixed, artificial name-family substitution using training attack medians. The same replacement is applied to every test row; no test label selects replacement values. These are not new detector performance estimates or a causal traffic intervention.",
+  "source_sha256": "a350167526dfa9c9fdd27aea17a56572fae1c1b2faa4ff8e596ce513a7b13903",
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "seed": 42,
+    "dataset_sha256": "62ec5d632c9e665851c551487d6d1e2afbc7f8f55b62cac4649999dadafc89de"
+  }
+}

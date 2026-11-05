@@ -16,6 +16,14 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 
 Các lệnh sau gọi trực tiếp Python của môi trường ảo nên dùng được khi mở Terminal mới. Không cần cài lại Python hệ thống.
 
+Nếu dùng checkout GitHub hoặc gói GitHub Ready, khôi phục dữ liệu công khai trước khi kiểm tra:
+
+```bash
+.venv312/bin/python source/download_public_data.py
+```
+
+Bộ nguồn đầy đủ đã kèm dữ liệu nên bỏ qua lệnh tải này.
+
 ## 2. Kiểm tra kết quả đã lưu
 
 ```bash
@@ -107,7 +115,7 @@ Các phép kiểm tra này không biến baseline CIC thành bản tái lập hy
 
 ## 7. Đọc bản sửa và truy cập kho mã công khai
 
-Bài chính có 5 trang, 2 bảng + 2 hình; phụ lục 6 trang giữ đầy đủ kết quả. `docs/PHAN_HOI_NHAN_XET_CUOI_VI.md` đối chiếu từng nhận xét. Kho mã công khai đã xác minh: https://github.com/QuangApollo/iam302t-dns-shortcut-audit. Hai PDF đã gắn link. Còn 68 đường dẫn NPZ chưa công khai do bước duyệt tải lên; bộ nguồn đầy đủ và gói GitHub Ready kèm bộ LMS vẫn chứa đủ arrays. Hướng dẫn kiểm tra trực tiếp ở trên áp dụng cho các gói đầy đủ này. Khi dùng checkout GitHub còn thiếu NPZ, cần khôi phục dữ liệu công khai rồi chạy lại các fit theo mục 3, 4 và thí nghiệm seed trước khi verify toàn bộ. Không tạo lại frozen splits.
+Bài chính có 5 trang, 2 bảng + 2 hình; phụ lục 6 trang giữ đầy đủ kết quả. `docs/PHAN_HOI_NHAN_XET_CUOI_VI.md` đối chiếu từng nhận xét. Kho mã đã xác minh đủ 255/255 file, gồm 95 NPZ: https://github.com/QuangApollo/iam302t-dns-shortcut-audit. Hai PDF đã gắn link. Sau khi khôi phục dữ liệu công khai đúng checksum, có thể verify các dự đoán đã lưu mà không fit lại. Bộ nguồn đầy đủ kèm LMS đã chứa dữ liệu cần thiết. Giữ nguyên frozen splits.
 
 Sau khi sửa bất kỳ file nào, checksum manifest cũ sẽ không còn đúng cho file đó. Chỉ so manifest ngay sau giải nén. Gói repository gọn không chứa dữ liệu công khai lớn và bằng chứng legacy; `source/download_public_data.py` khôi phục đúng dữ liệu cần thiết từ release có checksum.
 

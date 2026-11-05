@@ -67,4 +67,4 @@ Gói repository gọn giữ execution log trong `results/paper_rf_seeds/executio
 
 ## Việc tiếp theo để chuẩn bị bản gửi paper
 
-Bước thí nghiệm seed đã xong. Cần tiếp tục đối chiếu toàn văn công trình gần nhất, chốt nơi nộp và yêu cầu ẩn danh/page limit, chuẩn bị artifact phù hợp, rồi để toàn bộ tác giả đọc và duyệt nội dung. Chưa có URL repository công khai được xác minh và chưa chọn venue cụ thể.
+Bước thí nghiệm seed đã xong. Kho mã https://github.com/QuangApollo/iam302t-dns-shortcut-audit đã được xác minh đủ 255/255 file, gồm 95 NPZ. Lần nộp hiện tại là nộp lại qua LMS theo hướng dẫn giảng viên; các tác giả đọc và duyệt nội dung, trích dẫn và khai báo AI trước khi gửi.

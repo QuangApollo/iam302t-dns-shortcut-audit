@@ -134,7 +134,7 @@ Ngày 05/11/2026, bản sửa 4.1; đã đối chiếu gói VM và đủ 30 cấ
 
 {availability}
 
-Hai PDF đã gắn URL thật. Kho GitHub hiện có 187/255 file; 68 đường dẫn NPZ còn chờ công khai, nhưng các gói tải về kèm bộ LMS vẫn đầy đủ. Các tác giả đọc lại và chịu trách nhiệm nội dung/AI disclosure trước khi gửi thầy qua LMS. Không cần chạy lại thí nghiệm khi dùng gói nguồn đầy đủ này.
+Hai PDF đã gắn URL thật. Kho GitHub đã xác minh đủ 255/255 file, gồm 95 NPZ. Các gói tải về kèm bộ LMS có đầy đủ mã, dữ liệu và bằng chứng VM. Các tác giả đọc lại và chịu trách nhiệm nội dung/AI disclosure trước khi gửi thầy qua LMS. Không cần chạy lại thí nghiệm khi dùng gói nguồn đầy đủ này.
 
 ## Kết quả kiểm chứng
 

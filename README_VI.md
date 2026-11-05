@@ -37,7 +37,7 @@ Bộ nguồn đầy đủ đã chứa dữ liệu cần thiết. Gói repository
 
 ## Trạng thái trước khi nộp lại
 
-Kho mã công khai: [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Đã xác minh nhánh `main` và 187 file; 68 đường dẫn NPZ còn chờ quyền công khai. Bộ nộp LMS và gói GitHub Ready tải về vẫn có đủ dự đoán đã lưu. Kho GitHub hiện cần chạy lại các fit theo hướng dẫn để tái tạo các NPZ còn thiếu; gói nguồn đầy đủ có thể kiểm tra trực tiếp. Hai PDF đã gắn URL thật. Các tác giả đọc lại bài và khai báo AI trước khi gửi thầy qua LMS.
+Kho mã công khai: [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Đã xác minh đủ **255/255 file, gồm 95 file NPZ**, trên nhánh `main`. Gói GitHub chứa đủ dự đoán đã lưu; tải dữ liệu công khai đúng checksum bằng `source/download_public_data.py` trước khi verify. Bộ nguồn đầy đủ kèm LMS đã có dữ liệu và log VM gốc. Hai PDF ghi URL thật. Các tác giả đọc lại bài và khai báo AI trước khi gửi thầy qua LMS.
 
 ## Cập nhật sau lần chạy VM 04/11
 

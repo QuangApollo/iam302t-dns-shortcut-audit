@@ -44,7 +44,7 @@ ChatGPT (OpenAI) assisted wording, code drafting, literature lookup, diagnostic 
 
 ## Publication status
 
-The public source repository is [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Its main branch and 187 published file hashes were verified through the GitHub API on November 5. Publication of 68 additional NPZ paths is awaiting approval; the complete saved arrays are included in the LMS source archive and GitHub Ready ZIP. `CODE_AVAILABILITY.json` lists the pending paths. The public checkout therefore requires the planned refits to regenerate those arrays before all saved-output checks can pass. The full LMS source package can verify the saved outputs directly. See `docs/XUAT_BAN_GITHUB_VI.md`.
+The public repository is [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). All **255 files, including 95 NPZ files**, were verified against the prepared package on November 5. `CODE_AVAILABILITY.json` records the verified publication commit and scope. After restoring the checksum-pinned public datasets, the public checkout can verify its saved predictions without refitting. The complete LMS source package also preserves the data and original VM execution archives. See `docs/XUAT_BAN_GITHUB_VI.md`.
 
 ## VM evidence received November 4
 

@@ -52,12 +52,12 @@ Dùng `source/verify_rf_seed_check.py` trong bản nguồn mới để kiểm tr
 
 1. Đọc bài chính 5 trang và phụ lục 6 trang; đối chiếu tên thành viên, giảng viên, citation và khai báo AI.
 2. Dùng các PDF bản 05/11 đã gắn kho mã https://github.com/QuangApollo/iam302t-dns-shortcut-audit.
-3. Gửi kèm phản hồi nhận xét và gói mã/dữ liệu/bằng chứng. Gói nguồn đầy đủ chứa mọi NPZ, frozen indices và log VM; GitHub hiện có 187 file, 68 đường dẫn NPZ còn chờ công khai.
+3. Gửi kèm phản hồi nhận xét và gói mã/dữ liệu/bằng chứng. Gói nguồn đầy đủ chứa mọi NPZ, frozen indices và log VM; GitHub đã xác minh đủ 255/255 file, gồm 95 NPZ.
 4. Làm đúng tên file và giới hạn dung lượng được hiển thị ở bài nộp LMS. Nếu cần tách file, nộp PDF và phụ lục riêng, kèm gói mã/bằng chứng theo ô đính kèm của thầy.
 5. Sau khi nộp, kiểm tra LMS hiển thị đúng file và trạng thái đã gửi.
 
-## 5. Phạm vi đã hoàn tất và phần còn chờ
+## 5. Phạm vi đã hoàn tất
 
-Đã hoàn tất nội dung sửa, đối chiếu VM, thí nghiệm 30 seed cases, nguồn Overleaf và URL kho mã công khai. Các số liệu, data và splits không đổi trong lần cập nhật URL. Phần còn chờ trên GitHub là công khai các NPZ được liệt kê trong `CODE_AVAILABILITY.json`; các gói tải về phục vụ LMS vẫn đầy đủ.
+Đã hoàn tất nội dung sửa, đối chiếu VM, thí nghiệm 30 seed cases, nguồn Overleaf và URL kho mã công khai. Các số liệu, data và splits không đổi trong lần cập nhật URL. Kho GitHub đã công khai đủ 255 file và mọi NPZ của gói repository. Bộ tải về phục vụ LMS giữ thêm dữ liệu và log VM gốc. Các tác giả đọc lại nội dung rồi gửi bộ nộp qua LMS.
 
 Việc giảng viên duyệt phụ thuộc đánh giá bài nộp; các phép kiểm chứng là bằng chứng về kết quả và khả năng tái lập, không bảo đảm quyết định duyệt. Nếu sau này nhóm muốn gửi hội nghị/tạp chí, đó là một bước riêng cần rà soát novelty và quy định nơi gửi.

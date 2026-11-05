@@ -17,7 +17,7 @@ Nhóm đã sửa cấu trúc bài quanh luận điểm: **bỏ một cột khôn
 | Giảm bảng và chuỗi số | Bài chính còn 4 displays: 2 bảng + 2 hình. Chuyển full folds, ablations, LAB và CTU controls sang phụ lục; rút Korving xuống coverage row và diễn giải ngắn | Bài chính 5 trang; phụ lục số liệu đầy đủ |
 | Related work | Thêm Arp 2022, Zhao 2021, TESSERACT 2019, Engelen 2021; đối chiếu nguồn chính thức/tác giả | Bài chính II và References |
 | Khai báo AI | Thêm công cụ, loại hỗ trợ, nguồn số liệu thực chạy và trách nhiệm của tác giả | Bài chính VII, phụ lục cuối |
-| Kho mã công khai | Đã đăng mã nguồn, tài liệu, báo cáo và xác minh URL; 187 file có hash khớp. Hai PDF ghi link thật. 68 đường dẫn NPZ chưa công khai; bộ LMS vẫn giữ đầy đủ | https://github.com/QuangApollo/iam302t-dns-shortcut-audit; `CODE_AVAILABILITY.json` ghi phạm vi và danh sách còn chờ; `docs/XUAT_BAN_GITHUB_VI.md` |
+| Kho mã công khai | Đã công khai và xác minh đủ 255/255 file, gồm 95 NPZ. Hai PDF ghi URL thật; có hướng dẫn khôi phục dữ liệu đúng checksum và verify dự đoán đã lưu | https://github.com/QuangApollo/iam302t-dns-shortcut-audit; `CODE_AVAILABILITY.json` ghi commit và phạm vi xác minh; `docs/XUAT_BAN_GITHUB_VI.md` |
 
 ## Đính chính kỹ thuật quan trọng ở M2
 
@@ -43,7 +43,7 @@ Nhóm xác nhận mismatch tồn tại trong originals có checksum đúng và c
 - CTU: 4 confusion matrices; LR8/LR7 khớp prediction arrays; 2 original downloads khớp publisher MD5 và SHA-256.
 - Dataset/split checksum giữ nguyên; mã/script, môi trường và log mới được ghi riêng, không đổi danh tính kết quả VM gốc.
 
-**Trước khi nộp lại:** tác giả đọc và chịu trách nhiệm nội dung, đặc biệt AI disclosure; dùng hai PDF mới có URL kho mã đã xác minh. Gửi kèm gói nguồn đầy đủ qua LMS để thầy có mọi saved prediction, kể cả các NPZ chưa công khai trên GitHub.
+**Trước khi nộp lại:** tác giả đọc và chịu trách nhiệm nội dung, đặc biệt AI disclosure; dùng hai PDF mới có URL kho mã đã xác minh. Gửi kèm gói nguồn đầy đủ qua LMS để thầy có mã, dữ liệu, mọi saved prediction và log VM gốc. Kho GitHub cũng đã chứa đủ 95 NPZ của gói công khai.
 
 ## Bằng chứng chạy lại trên VM ngày 04/11
 

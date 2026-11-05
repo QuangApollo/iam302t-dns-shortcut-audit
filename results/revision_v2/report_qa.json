@@ -11,17 +11,19 @@
   "main_figures": 2,
   "bibliography_entries": 16,
   "ai_disclosure": true,
-  "public_repository_status": "public_verified; 68 NPZ paths pending publication",
+  "public_repository_status": "public_verified",
   "coarse_token_split_interpretation": "sensitivity only; sld is grouping-only and not hashed by the pipeline",
   "visual_review": "Both updated PDFs compiled with XeLaTeX. Main remains 5 pages and supplement 6. All first 4/5 pages are pixel-identical to previously reviewed versions; changed last pages rendered and inspected. Live repository links verified; no overfull boxes, missing glyphs or unresolved references.",
   "ctu_originals_reverified_md5_and_sha256": true,
   "neural_checkpoint_reproduction": false,
-  "remaining_instructor_requirement": "Public source URL is verified and included in both reports. 68 NPZ paths remain unpublished; complete arrays accompany the LMS submission.",
+  "remaining_instructor_requirement": "Public repository requirement completed. Authors review the material and submit via the instructor LMS.",
   "vm_receipt": "results/PAPER_VM_RECEIPT_VALIDATION.json",
   "score_provenance": "Mechanism/cohort tables use verified VM scores; RF whiskers and seed figures use all 30 verified VM cases. Seed-42 baseline bars remain explicit.",
   "rf_seed_experiment_status": "Completed 30/30 fixed VM cases; six seed-42 baselines, six summaries and fifteen paired differences independently verified.",
   "supplement_tables": 15,
   "supplement_figures": 2,
   "rf_seed_verification": "results/paper_rf_seeds/verification.json",
-  "public_repository_url": "https://github.com/QuangApollo/iam302t-dns-shortcut-audit"
+  "public_repository_url": "https://github.com/QuangApollo/iam302t-dns-shortcut-audit",
+  "public_artifact_status": "complete: 255 files, including 95 NPZ",
+  "public_repository_commit": "7debef08e152bf0f37e5cc41a84209efb5bfbd6a"
 }

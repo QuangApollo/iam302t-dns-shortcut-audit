@@ -34,6 +34,22 @@ def manifest(payload):
                    for name, raw in sorted(payload.items())).encode('utf-8')
 
 
+def write_complete(path, raw):
+    """Handle short writes and verify the stored bytes before packaging more files."""
+    with path.open('wb') as stream:
+        view = memoryview(raw)
+        offset = 0
+        while offset < len(view):
+            written = stream.write(view[offset:offset + 1024 * 1024])
+            if not written:
+                raise OSError(f'Short write without progress: {path}')
+            offset += written
+    if path.stat().st_size != len(raw):
+        raise OSError(f'Incomplete file: {path}')
+    if hashlib.sha256(path.read_bytes()).digest() != hashlib.sha256(raw).digest():
+        raise OSError(f'Stored checksum mismatch: {path}')
+
+
 def write_zip(path, payload, prefix=''):
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
@@ -43,8 +59,8 @@ def write_zip(path, payload, prefix=''):
             entry.external_attr = ((0o100755 if name.endswith('.sh') else 0o100644) << 16)
             archive.writestr(entry, raw)
     raw = buffer.getvalue()
-    path.write_bytes(raw)
-    with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+    write_complete(path, raw)
+    with zipfile.ZipFile(path) as archive:
         assert archive.testzip() is None
     return {'name': path.name, 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
 
@@ -144,7 +160,7 @@ GROUP là độ nhạy theo token thô, không phải registrable-domain holdout
     }
     kit['MANIFEST_SHA256.txt'] = manifest(kit)
     checks.append(write_zip(output / 'IAM302t_Nhom3_BO_NOP.zip', kit, 'IAM302t_Nhom3_BanSua_2026-11-05/'))
-    (output / 'IAM302t_HuongB_TAI_LAI_TRON_BO.zip').write_bytes((output / 'IAM302t_Nhom3_BO_NOP.zip').read_bytes())
+    write_complete(output / 'IAM302t_HuongB_TAI_LAI_TRON_BO.zip', (output / 'IAM302t_Nhom3_BO_NOP.zip').read_bytes())
     (output / 'PACKAGE_CHECKS.json').write_text(json.dumps({'archives': checks,
         'source_files': len(payload), 'overleaf_files': len(overleaf), 'public_repo_files': len(public),
         'availability': status, 'all_zip_crc_passed': True}, indent=2) + '\n')

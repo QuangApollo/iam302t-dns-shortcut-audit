@@ -1,0 +1,189 @@
+{
+  "schema": "paper-rf-seeds-v1",
+  "mode": "full",
+  "dataset_sha256": "62ec5d632c9e665851c551487d6d1e2afbc7f8f55b62cac4649999dadafc89de",
+  "split_sha256": "a48ccdaf3995390f3af063cb107429738149ee546dda24d14804c30a3d2641d5",
+  "source_sha256": "931469ef57e4276eedee85311bc4541275db470b3f4de080bb931d79a03ca551",
+  "pipeline_source_sha256": "125ee583fc5cfc21633ea7652c8804f96547812bab4cc96c40015cf67220fd5a",
+  "audit_source_sha256": "05e6d857bc6a9d58aea3a9da603446c5a2c3b7718c45beb385394045a825b16f",
+  "seeds": [
+    42,
+    0,
+    1,
+    7,
+    2026
+  ],
+  "protocols": [
+    "GROUP_1",
+    "GROUP_2",
+    "GROUP_3"
+  ],
+  "variants": [
+    "FULL",
+    "NO_DOMAIN"
+  ],
+  "cases": [
+    {
+      "seed": 42,
+      "protocol": "GROUP_1",
+      "variant": "FULL"
+    },
+    {
+      "seed": 42,
+      "protocol": "GROUP_1",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 42,
+      "protocol": "GROUP_2",
+      "variant": "FULL"
+    },
+    {
+      "seed": 42,
+      "protocol": "GROUP_2",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 42,
+      "protocol": "GROUP_3",
+      "variant": "FULL"
+    },
+    {
+      "seed": 42,
+      "protocol": "GROUP_3",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_1",
+      "variant": "FULL"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_1",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_2",
+      "variant": "FULL"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_2",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_3",
+      "variant": "FULL"
+    },
+    {
+      "seed": 0,
+      "protocol": "GROUP_3",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_1",
+      "variant": "FULL"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_1",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_2",
+      "variant": "FULL"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_2",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_3",
+      "variant": "FULL"
+    },
+    {
+      "seed": 1,
+      "protocol": "GROUP_3",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_1",
+      "variant": "FULL"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_1",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_2",
+      "variant": "FULL"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_2",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_3",
+      "variant": "FULL"
+    },
+    {
+      "seed": 7,
+      "protocol": "GROUP_3",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_1",
+      "variant": "FULL"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_1",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_2",
+      "variant": "FULL"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_2",
+      "variant": "NO_DOMAIN"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_3",
+      "variant": "FULL"
+    },
+    {
+      "seed": 2026,
+      "protocol": "GROUP_3",
+      "variant": "NO_DOMAIN"
+    }
+  ],
+  "expected_cases": 30,
+  "rf_parameters": {
+    "n_estimators": 100,
+    "max_depth": 16,
+    "min_samples_leaf": 2,
+    "class_weight": null,
+    "n_jobs": 2
+  },
+  "preprocessing": "Same zero imputation and exact RF feature inventory as the frozen baseline.",
+  "threshold": "Default classifier predict; no threshold tuning or best-seed selection.",
+  "analysis": "Report every seed and fold, per-fold min/median/max F1, and paired FULL-minus-NO_DOMAIN F1. Seeds reuse the same test rows; no independent-sample confidence interval.",
+  "group_scope": "Exact coarse-token holdouts; not validated registered-domain or capture holdouts."
+}

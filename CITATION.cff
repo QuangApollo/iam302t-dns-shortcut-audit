@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this audit, cite the accompanying course-project report."
+type: software
+title: "Auditing Shortcut Dependencies in DNS Tunneling: Residual Information across Models and Splits"
+version: "4.0"
+date-released: "2026-11-04"
+authors:
+  - family-names: "Mai"
+    given-names: "Chí Thành"
+  - family-names: "Đỗ"
+    given-names: "Quang Thuận"
+  - family-names: "Nguyễn"
+    given-names: "Lê Quốc Bảo"
+  - family-names: "Đặng"
+    given-names: "Nguyễn Phương Thảo"
+abstract: "A reproducible audit of residual feature information, coarse-token split sensitivity, RF failure mechanisms, and CTU train/test representation mismatch."
+keywords:
+  - DNS tunneling
+  - dataset audit
+  - residual proxies
+  - reproducibility

@@ -1,0 +1,23 @@
+{
+  "python": "3.12.16",
+  "packages": {
+    "pyparsing": "3.3.3",
+    "threadpoolctl": "3.6.0",
+    "six": "1.17.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "python-dateutil": "3.0.0",
+    "scipy": "1.17.0",
+    "pytz": "2026.6",
+    "kiwisolver": "1.5.1",
+    "pillow": "13.0.0",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "packaging": "26.3",
+    "tzdata": "2026.6",
+    "contourpy": "1.4.0",
+    "fonttools": "4.68.0",
+    "cycler": "0.12.1",
+    "joblib": "1.5.3"
+  }
+}

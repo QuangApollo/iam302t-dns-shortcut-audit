@@ -1,0 +1,14 @@
+{
+  "status": "pending_account_connection",
+  "url": null,
+  "required_for_instructor_revision": true,
+  "prepared": "2026-11-03",
+  "ready_artifacts": [
+    "GitHub-ready source package",
+    "README.md",
+    "CITATION.cff",
+    "PUBLISH_GITHUB.sh",
+    "source/set_repository_url.py"
+  ],
+  "next_step": "Publish the prepared repository using the authors GitHub account, verify its URL, and recompile both reports."
+}

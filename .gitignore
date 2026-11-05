@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv*/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.xdv
+data/cic/*.csv
+data/ctu/

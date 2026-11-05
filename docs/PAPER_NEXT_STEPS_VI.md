@@ -1,6 +1,6 @@
-# Bước tiếp theo để phát triển thành paper
+# Bước tiếp theo để nộp lại qua LMS
 
-Cập nhật 04/11/2026, sau khi đối chiếu gói thực chạy trên VM. Mục tiêu là một bài audit có đóng góp rõ, bằng chứng đủ và phạm vi kết luận khớp dữ liệu. Thí nghiệm RF 5 seed đã hoàn tất 30/30 cấu hình, được kiểm chứng và đưa vào bài. Các mục dưới đây phân biệt phần đã xong với bước chuẩn bị gửi paper.
+Cập nhật 05/11/2026. Mục tiêu hiện tại là nộp lại bài theo hướng dẫn và nhận xét của giảng viên qua LMS. Thí nghiệm RF 5 seed đã hoàn tất 30/30 cấu hình, được kiểm chứng và đưa vào bài. Không cần chọn hội nghị hoặc tạp chí cho lần nộp môn học này.
 
 ## 1. Ba luận điểm cần bảo vệ
 
@@ -48,22 +48,16 @@ Kết quả hỗ trợ tính lặp lại của fold-specific response dưới fo
 
 Dùng `source/verify_rf_seed_check.py` trong bản nguồn mới để kiểm tra các kết quả đã lưu. Bước hiện tại đã hoàn tất, không còn là thí nghiệm đang chờ chạy.
 
-## 4. Chốt nơi nộp sau khi xác định phạm vi
+## 4. Nộp lại qua LMS
 
-Hướng làm việc hiện tại phù hợp để chuẩn bị một focused audit paper, ưu tiên xem xét workshop/short-paper track có chủ đề network measurement, dataset quality hoặc ML security. Việc chọn venue cần biết hạn nộp, yêu cầu của thầy/trường và khả năng chi phí/tham dự.
+1. Đọc bài chính 5 trang và phụ lục 6 trang; đối chiếu tên thành viên, giảng viên, citation và khai báo AI.
+2. Dùng các PDF bản 05/11 đã gắn kho mã https://github.com/QuangApollo/iam302t-dns-shortcut-audit.
+3. Gửi kèm phản hồi nhận xét và gói mã/dữ liệu/bằng chứng. Gói nguồn đầy đủ chứa mọi NPZ, frozen indices và log VM; GitHub hiện có 187 file, 68 đường dẫn NPZ còn chờ công khai.
+4. Làm đúng tên file và giới hạn dung lượng được hiển thị ở bài nộp LMS. Nếu cần tách file, nộp PDF và phụ lục riêng, kèm gói mã/bằng chứng theo ô đính kèm của thầy.
+5. Sau khi nộp, kiểm tra LMS hiển thị đúng file và trạng thái đã gửi.
 
-Đã kiểm tra CFP WTMC 2026: chủ đề có liên quan và có short/regular/long-paper track, nhưng deadline **13/07/2026 đã qua**, nên không phải lựa chọn đang nhận bài ngày 04/11/2026. Nguồn: [WTMC](https://wtmc.info/index.html), [IEEE Security calendar](https://www.ieee-security.org/Calendar/cfps/cfp-WTMC2026.html). Chưa xác minh được CFP WTMC 2027; không gán lịch dự kiến thành deadline thật.
+## 5. Phạm vi đã hoàn tất và phần còn chờ
 
-USENIX Security 2027 có tiêu chí originality, rigor và open-science; đây là nguồn tham khảo về tiêu chuẩn, chưa phải venue được chọn cho dự án: [CFP](https://www.usenix.org/conference/usenixsecurity27/call-for-papers).
+Đã hoàn tất nội dung sửa, đối chiếu VM, thí nghiệm 30 seed cases, nguồn Overleaf và URL kho mã công khai. Các số liệu, data và splits không đổi trong lần cập nhật URL. Phần còn chờ trên GitHub là công khai các NPZ được liệt kê trong `CODE_AVAILABILITY.json`; các gói tải về phục vụ LMS vẫn đầy đủ.
 
-Sau khi chốt venue, kiểm tra đúng template, page limit, ẩn danh, link artifact, AI disclosure và quy định submission. Bản nộp môn học có tên tác giả/giảng viên và repository public cần được điều chỉnh nếu venue yêu cầu ẩn danh.
-
-## 5. Tiêu chí chuyển sang bản nộp
-
-1. Hoàn tất đọc/đối chiếu công trình gần nhất và mô tả được đóng góp riêng.
-2. **Đã hoàn tất:** đủ 30 cấu hình seed, kiểm tra toàn bộ và cập nhật bài theo kết quả thật.
-3. Chốt phạm vi CIC coarse-token và CTU release; không nâng thành tuyên bố vượt dữ liệu.
-4. Repository/anonymous artifact truy cập và tái lập được theo quy định nơi nộp.
-5. Tất cả tác giả đọc, hiểu và duyệt nội dung, citation và khai báo AI trước khi gửi.
-
-Bản hiện tại hoàn tất tái lập, đối chiếu dữ liệu và thí nghiệm RF qua 5 seed. Việc rà soát novelty, chốt venue, hoàn tất repository/anonymous artifact và duyệt tác giả vẫn cần tiếp tục.
+Việc giảng viên duyệt phụ thuộc đánh giá bài nộp; các phép kiểm chứng là bằng chứng về kết quả và khả năng tái lập, không bảo đảm quyết định duyệt. Nếu sau này nhóm muốn gửi hội nghị/tạp chí, đó là một bước riêng cần rà soát novelty và quy định nơi gửi.

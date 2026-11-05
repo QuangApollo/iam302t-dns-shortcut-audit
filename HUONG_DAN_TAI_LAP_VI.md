@@ -105,9 +105,9 @@ IEEEtran và font Liberation đã kèm. Khi dùng Overleaf, tải ZIP Overleaf �
 
 Các phép kiểm tra này không biến baseline CIC thành bản tái lập hybrid hai tầng của nguồn gốc. Phạm vi thí nghiệm và các đầu vào còn thiếu được ghi trong báo cáo và `docs/DOI_CHIEU_PHUONG_PHAP_GOC_VI.md`.
 
-## 7. Đọc bản sửa và hoàn tất link mã công khai
+## 7. Đọc bản sửa và truy cập kho mã công khai
 
-Bài chính có 5 trang, 2 bảng + 2 hình; phụ lục 6 trang giữ đầy đủ kết quả. `docs/PHAN_HOI_NHAN_XET_CUOI_VI.md` đối chiếu từng nhận xét mới. **Chưa có URL public repo xác minh được**; theo `docs/XUAT_BAN_GITHUB_VI.md` để publish bằng tài khoản của bạn và gắn URL thật, rồi compile lại. Không cần thay dữ liệu hoặc huấn luyện lại vì bước publication này.
+Bài chính có 5 trang, 2 bảng + 2 hình; phụ lục 6 trang giữ đầy đủ kết quả. `docs/PHAN_HOI_NHAN_XET_CUOI_VI.md` đối chiếu từng nhận xét. Kho mã công khai đã xác minh: https://github.com/QuangApollo/iam302t-dns-shortcut-audit. Hai PDF đã gắn link. Còn 68 đường dẫn NPZ chưa công khai do bước duyệt tải lên; bộ nguồn đầy đủ và gói GitHub Ready kèm bộ LMS vẫn chứa đủ arrays. Hướng dẫn kiểm tra trực tiếp ở trên áp dụng cho các gói đầy đủ này. Khi dùng checkout GitHub còn thiếu NPZ, cần khôi phục dữ liệu công khai rồi chạy lại các fit theo mục 3, 4 và thí nghiệm seed trước khi verify toàn bộ. Không tạo lại frozen splits.
 
 Sau khi sửa bất kỳ file nào, checksum manifest cũ sẽ không còn đúng cho file đó. Chỉ so manifest ngay sau giải nén. Gói repository gọn không chứa dữ liệu công khai lớn và bằng chứng legacy; `source/download_public_data.py` khôi phục đúng dữ liệu cần thiết từ release có checksum.
 
@@ -125,4 +125,4 @@ Trong bản nguồn đầy đủ, trước khi chạy lại các fit, có thể 
 .venv312/bin/python source/verify_rf_seed_check.py --check-received-archive
 ```
 
-`results/paper_rf_seeds/` giữ đủ dự đoán và execution log. Verifier ghi receipt riêng, không sửa NPZ hay log gốc. Gói repo gọn bỏ archive lớn nhưng vẫn giữ đủ evidence để kiểm tra metric sau khi khôi phục dữ liệu. Xem `docs/PAPER_RF_SEED_REVIEW_VI.md` để diễn giải kết quả và `docs/PAPER_NEXT_STEPS_VI.md` cho bước chuẩn bị gửi paper.
+`results/paper_rf_seeds/` giữ đủ dự đoán và execution log. Verifier ghi receipt riêng, không sửa NPZ hay log gốc. Gói repo gọn bỏ archive lớn nhưng vẫn giữ đủ evidence để kiểm tra metric sau khi khôi phục dữ liệu. Xem `docs/PAPER_RF_SEED_REVIEW_VI.md` để diễn giải kết quả và `docs/PAPER_NEXT_STEPS_VI.md` cho bước nộp lại qua LMS.

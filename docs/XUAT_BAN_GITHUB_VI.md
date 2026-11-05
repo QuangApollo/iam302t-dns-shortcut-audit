@@ -1,33 +1,21 @@
-# Hoàn tất kho mã công khai và gắn URL thật vào báo cáo
+# Kho mã công khai và trạng thái bằng chứng
 
-Đây là yêu cầu còn thiếu trong nhận xét cuối. Mã và cấu trúc repository đã chuẩn bị; chưa có phiên đăng nhập GitHub để tạo kho và đẩy mã. Không cần cấp mật khẩu hoặc token trong tin nhắn.
+Kho mã của nhóm: [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Chủ sở hữu: QuangApollo. Đã xác minh repository public, nhánh main và 187 file khớp Git blob hash ngày 05/11/2026. Commit kiểm tra: `e284e519e703e623f50c94671ae689cf7d94fb76`.
 
-## Cách 1 — Làm trong phiên ChatGPT đã kết nối GitHub
+## Phần đã công khai
 
-Kết nối tài khoản GitHub, hoặc cung cấp repository công khai đã tạo mà bạn có quyền ghi. Khi có kết nối/quyền ghi, có thể đăng gói đã chuẩn bị, xác minh URL công khai, cập nhật `code_availability.tex` và biên dịch lại. Các file hiện tại đã làm xong phần nội dung và số liệu, không cần làm lại thí nghiệm.
+Mã nguồn, tài liệu, frozen splits, báo cáo, bảng/hình và các artifact tải lên thành công. Hai PDF bản mới đã ghi URL thật. Việc nộp môn học thực hiện qua LMS theo yêu cầu giảng viên.
 
-## Cách 2 — Đăng trên máy của bạn
+## Phần chưa công khai
 
-Cài Git, GitHub CLI theo hướng dẫn chính thức của GitHub, rồi giải nén gói `IAM302t_Nhom3_GitHub_Ready.zip`. Chạy trong thư mục gói đó:
+Bước duyệt tự động đã chặn một số thao tác đăng NPZ; lần đăng còn 68 đường dẫn NPZ chưa hoàn tất. Danh sách cụ thể nằm trong `CODE_AVAILABILITY.json`. Đây là các arrays phục vụ kiểm chứng; không sửa số liệu để tránh bước duyệt. Bộ nguồn đầy đủ và gói GitHub Ready tải về vẫn chứa đủ file.
 
-```bash
-gh auth login
-bash PUBLISH_GITHUB.sh
-```
+## Tái lập khi dùng GitHub
 
-Script tạo repository công khai `iam302t-dns-shortcut-audit` trong tài khoản đã xác thực, commit và push mã. Có thể truyền tên khác làm đối số đầu tiên nếu tên đó đã được dùng. Script dừng nếu thư mục đã có git checkout; không ghi đè remote có sẵn.
+Khôi phục dữ liệu đúng checksum bằng `source/download_public_data.py`. Giữ nguyên frozen splits. Khi còn thiếu saved arrays, chạy các fit ở mục 3 và 4 của `HUONG_DAN_TAI_LAP_VI.md`, rồi chạy `source/paper_rf_seed_check.py --resume` và các verifier. Việc này tạo lại kết quả tại máy người chạy; không tự công khai các file còn chờ.
 
-## Gắn URL và tạo lại hai PDF
+Để kiểm tra saved outputs mà không fit lại, dùng gói nguồn đầy đủ đi kèm bộ nộp LMS. Các kết quả VM gốc và 30 seed cases đã được đối chiếu; lần cập nhật URL giữ nguyên dữ liệu và kết quả khoa học.
 
-Sau khi repository đã có mã, chạy trong **bộ nguồn đầy đủ**. Thay URL dưới đây bằng URL thật được GitHub trả về; đây chỉ là minh họa cú pháp, không phải link công bố của nhóm:
+## Cập nhật PDF về sau
 
-```bash
-.venv312/bin/python source/set_repository_url.py https://github.com/TEN_TAI_KHOAN/TEN_KHO_MA
-cd report
-latexmk -xelatex -interaction=nonstopmode -halt-on-error -jobname=IAM302t_HuongB_Revised_IEEE main.tex
-latexmk -xelatex -interaction=nonstopmode -halt-on-error -jobname=IAM302t_HuongB_Supplement supplement.tex
-```
-
-Script kiểm tra repository thực sự public, chứa pipeline dự án và đúng dataset hash trong split metadata trước khi viết URL. Sau đó thay PDF trong bộ nộp và cập nhật manifest. Không chỉ sửa văn bản thành “public” khi repository chưa tồn tại.
-
-Nếu dùng Overleaf: cập nhật `code_availability.tex` bằng URL đã kiểm tra, chọn XeLaTeX, biên dịch `main.tex` và `supplement.tex`. Hai báo cáo dùng chung file availability.
+Hai báo cáo dùng chung `report/code_availability.tex`. Chọn XeLaTeX và biên dịch `main.tex`, `supplement.tex` nếu sửa nội dung hoặc URL. `source/set_repository_url.py` dùng cho môi trường có quyền truy cập API GitHub; lần này kiểm tra trực tiếp qua API được kết nối và lưu phạm vi trong `CODE_AVAILABILITY.json`.

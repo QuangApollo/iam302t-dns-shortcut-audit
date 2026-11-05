@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this audit, cite the accompanying course-project report."
 type: software
 title: "Auditing Shortcut Dependencies in DNS Tunneling: Residual Information across Models and Splits"
-version: "4.0"
-date-released: "2026-11-04"
+version: "4.1"
+date-released: "2026-11-05"
 authors:
   - family-names: "Mai"
     given-names: "Chí Thành"
@@ -19,3 +19,4 @@ keywords:
   - dataset audit
   - residual proxies
   - reproducibility
+repository-code: "https://github.com/QuangApollo/iam302t-dns-shortcut-audit"

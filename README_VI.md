@@ -3,7 +3,7 @@
 **Đề tài:** Auditing Shortcut Dependencies in DNS Tunneling: Residual Information across Models and Splits.  
 **Thành viên:** Mai Chí Thành; Đỗ Quang Thuận; Nguyễn Lê Quốc Bảo; Đặng Nguyễn Phương Thảo.  
 **Giảng viên:** Mai Hoàng Đỉnh — FPT University.  
-**Bản sửa:** 04/11/2026, đã tiếp nhận và đối chiếu gói chạy thực tế trên VM.
+**Bản sửa:** 05/11/2026, đã đối chiếu kết quả VM và xác minh kho mã GitHub công khai.
 
 Bài chính `report/IAM302t_HuongB_Revised_IEEE.pdf` còn **5 trang, 2 bảng và 2 hình**. Phụ lục `report/IAM302t_HuongB_Supplement.pdf` giữ các kết quả đầy đủ (6 trang). Không thay dữ liệu CIC hoặc indices đã đóng băng.
 
@@ -20,7 +20,7 @@ Bài chính `report/IAM302t_HuongB_Revised_IEEE.pdf` còn **5 trang, 2 bảng v�
 - `docs/PHAN_HOI_NHAN_XET_CUOI_VI.md`: đối chiếu từng nhận xét và phần còn thiếu.
 - `HUONG_DAN_TAI_LAP_VI.md`: kiểm tra nhanh, chạy lại, biên dịch.
 - `docs/CTU_PIPELINE_TRACE.md`: nguồn gốc và phạm vi kết luận về CTU.
-- `docs/XUAT_BAN_GITHUB_VI.md`: hoàn tất URL kho mã thật.
+- `docs/XUAT_BAN_GITHUB_VI.md`: URL kho mã đã xác minh và trạng thái các artifact.
 - `results/revision_v2/verification.json`: kết quả kiểm tra mới; không thay receipt VM cũ.
 
 ## Kiểm tra nhanh
@@ -37,7 +37,7 @@ Bộ nguồn đầy đủ đã chứa dữ liệu cần thiết. Gói repository
 
 ## Trạng thái trước khi nộp lại
 
-Đã hoàn tất nội dung, thí nghiệm bổ sung và gói kiểm chứng. **URL kho mã công khai chưa có:** cần publish bằng tài khoản GitHub của tác giả, sau đó chạy script xác minh/gắn URL và biên dịch lại. Bản hiện tại ghi đúng trạng thái này, không dùng link giả. Các tác giả cần đọc lại bài và khai báo AI trước khi gửi thầy.
+Kho mã công khai: [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Đã xác minh nhánh `main` và 187 file; 68 đường dẫn NPZ còn chờ quyền công khai. Bộ nộp LMS và gói GitHub Ready tải về vẫn có đủ dự đoán đã lưu. Kho GitHub hiện cần chạy lại các fit theo hướng dẫn để tái tạo các NPZ còn thiếu; gói nguồn đầy đủ có thể kiểm tra trực tiếp. Hai PDF đã gắn URL thật. Các tác giả đọc lại bài và khai báo AI trước khi gửi thầy qua LMS.
 
 ## Cập nhật sau lần chạy VM 04/11
 

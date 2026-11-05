@@ -10,7 +10,7 @@ import shutil
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-BUILD_DATE = (2026, 11, 4, 0, 0, 0)
+BUILD_DATE = (2026, 11, 5, 0, 0, 0)
 TEMP_SUFFIXES = {'.aux', '.out', '.fls', '.fdb_latexmk', '.xdv', '.pyc', '.part', '.partial', '.synctex.gz'}
 
 
@@ -96,7 +96,7 @@ def main(output):
                     'CHƯA HOÀN TẤT URL kho mã công khai: cần đăng bằng tài khoản GitHub của tác giả và gắn URL thật vào báo cáo. Mã đã chuẩn bị trong gói GitHub Ready.')
     readme = f'''# Bộ sửa theo nhận xét cuối — Nhóm 3, IA2007
 
-Ngày 04/11/2026, bản sửa 4; đã đối chiếu gói VM và đủ 30 cấu hình RF seed. Giảng viên: Mai Hoàng Đỉnh. Thành viên: Mai Chí Thành; Đỗ Quang Thuận; Nguyễn Lê Quốc Bảo; Đặng Nguyễn Phương Thảo.
+Ngày 05/11/2026, bản sửa 4.1; đã đối chiếu gói VM và đủ 30 cấu hình RF seed. Giảng viên: Mai Hoàng Đỉnh. Thành viên: Mai Chí Thành; Đỗ Quang Thuận; Nguyễn Lê Quốc Bảo; Đặng Nguyễn Phương Thảo.
 
 ## File hiện hành
 
@@ -108,8 +108,8 @@ Ngày 04/11/2026, bản sửa 4; đã đối chiếu gói VM và đủ 30 cấu 
 | `03_IAM302t_Nhom3_Overleaf.zip` | Nguồn hai báo cáo; chọn XeLaTeX, compile main.tex/supplement.tex |
 | `04_PhanHoi_NhanXet_Cuoi.md` | Phản hồi từng nhận xét, kèm đính chính SLD chỉ dùng chia nhóm |
 | `05_HuongDan_TaiLap.md` | Cài môi trường và kiểm tra; dùng Python môi trường ảo trực tiếp |
-| `{public_name}` | Repository gọn sẵn để đăng; có script tải dữ liệu đúng checksum |
-| `06_KeHoach_BuocTiep_Paper.md` | Tiến độ nghiên cứu, giới hạn và bước chuẩn bị gửi paper |
+| `{public_name}` | Bản repository đầy đủ tải về; có script tải dữ liệu đúng checksum |
+| `06_KeHoach_BuocTiep_Paper.md` | Tiến độ đã hoàn tất và bước nộp lại qua LMS |
 | `07_BienBan_KiemTra_VM.md` | Đối chiếu gói nhận được, nhãn dự đoán và khác biệt score |
 | `08_KiemTra_RF_5Seed.md` | Đủ kết quả 30 cấu hình, kiểm chứng và phạm vi diễn giải |
 | `MANIFEST_SHA256.txt` | Checksum các file trong bộ này |
@@ -118,7 +118,7 @@ Ngày 04/11/2026, bản sửa 4; đã đối chiếu gói VM và đủ 30 cấu 
 
 {availability}
 
-Các tác giả cần đọc lại và chịu trách nhiệm nội dung/AI disclosure trước khi gửi thầy. Không cần huấn luyện lại để thêm link mã. Sau khi có URL, xem `docs/XUAT_BAN_GITHUB_VI.md` trong gói nguồn, compile lại hai PDF và chạy `source/package_submission.py` để tạo lại bộ nộp.
+Hai PDF đã gắn URL thật. Kho GitHub hiện có 187/255 file; 68 đường dẫn NPZ còn chờ công khai, nhưng các gói tải về kèm bộ LMS vẫn đầy đủ. Các tác giả đọc lại và chịu trách nhiệm nội dung/AI disclosure trước khi gửi thầy qua LMS. Không cần chạy lại thí nghiệm khi dùng gói nguồn đầy đủ này.
 
 ## Kết quả kiểm chứng
 
@@ -143,7 +143,7 @@ GROUP là độ nhạy theo token thô, không phải registrable-domain holdout
         '08_KiemTra_RF_5Seed.md': (ROOT / 'docs/PAPER_RF_SEED_REVIEW_VI.md').read_bytes(),
     }
     kit['MANIFEST_SHA256.txt'] = manifest(kit)
-    checks.append(write_zip(output / 'IAM302t_Nhom3_BO_NOP.zip', kit, 'IAM302t_Nhom3_BanSua_2026-11-04/'))
+    checks.append(write_zip(output / 'IAM302t_Nhom3_BO_NOP.zip', kit, 'IAM302t_Nhom3_BanSua_2026-11-05/'))
     (output / 'IAM302t_HuongB_TAI_LAI_TRON_BO.zip').write_bytes((output / 'IAM302t_Nhom3_BO_NOP.zip').read_bytes())
     (output / 'PACKAGE_CHECKS.json').write_text(json.dumps({'archives': checks,
         'source_files': len(payload), 'overleaf_files': len(overleaf), 'public_repo_files': len(public),
@@ -154,6 +154,6 @@ GROUP là độ nhạy theo token thô, không phải registrable-domain holdout
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT.parent / 'delivery_v4')
+    parser.add_argument('--output', type=Path, default=ROOT.parent / 'delivery_lms')
     args = parser.parse_args()
     main(args.output)

@@ -1,6 +1,6 @@
 # DNS tunneling audit — IAM302t Group 3
 
-**Paper:** *Auditing Shortcut Dependencies in DNS Tunneling: Residual Information across Models and Splits*. Revision 4, November 4, 2026; all 30 planned RF seed cases executed and independently verified.  
+**Paper:** *Auditing Shortcut Dependencies in DNS Tunneling: Residual Information across Models and Splits*. Revision 4.1, November 5, 2026; all 30 planned RF seed cases executed and independently verified.  
 **Authors:** Mai Chí Thành; Đỗ Quang Thuận; Nguyễn Lê Quốc Bảo; Đặng Nguyễn Phương Thảo. IA2007, FPT University. Instructor: Mai Hoàng Đỉnh.  
 [Vietnamese guide](README_VI.md) · [Reproduction](HUONG_DAN_TAI_LAP_VI.md) · [Response to feedback](docs/PHAN_HOI_NHAN_XET_CUOI_VI.md).
 
@@ -44,13 +44,13 @@ ChatGPT (OpenAI) assisted wording, code drafting, literature lookup, diagnostic 
 
 ## Publication status
 
-`CODE_AVAILABILITY.json` records the current public-repository status. Until a repository is actually published and verified, the reports do not assert a public URL. Follow `docs/XUAT_BAN_GITHUB_VI.md` to finish publication and regenerate the reports.
+The public source repository is [https://github.com/QuangApollo/iam302t-dns-shortcut-audit](https://github.com/QuangApollo/iam302t-dns-shortcut-audit). Its main branch and 187 published file hashes were verified through the GitHub API on November 5. Publication of 68 additional NPZ paths is awaiting approval; the complete saved arrays are included in the LMS source archive and GitHub Ready ZIP. `CODE_AVAILABILITY.json` lists the pending paths. The public checkout therefore requires the planned refits to regenerate those arrays before all saved-output checks can pass. The full LMS source package can verify the saved outputs directly. See `docs/XUAT_BAN_GITHUB_VI.md`.
 
 ## VM evidence received November 4
 
 `evidence/IAM302t_Paper_VM_Evidence_20261104.tar.gz` preserves the received execution archive. `results/PAPER_VM_RECEIPT_VALIDATION.json` records source/split/package checks, independent recomputation, label equality, and score differences. `logs/paper_vm/07_environment.json` lists the actual VM installation. Current report figures/tables use the VM outputs.
 
-See `docs/PAPER_NEXT_STEPS_VI.md` for the next research checkpoint. A robustness experiment across preset RF seeds is prepared in `source/paper_rf_seed_check.py`; its results are not yet reported as findings.
+See `docs/PAPER_NEXT_STEPS_VI.md` for the LMS submission steps. The completed robustness experiment in `source/paper_rf_seed_check.py` is reported below and in both reports.
 
 ## RF seed experiment completed November 4
 
